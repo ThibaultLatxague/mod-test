@@ -1,0 +1,10 @@
+---------------------------------------------------------------------------------------------------
+Version: 0.0.1
+Date: 28. 10. 2024
+  Features:
+    - This is an entry in the "Features" category.
+  Balancing:
+    - This is a multiline entry in the "Balancing" category.
+      There is some extra text here because it is needed for the example.
+  Bugfixes:
+    - Fixed that canceling syncing mods with a save would exit the GUI.
