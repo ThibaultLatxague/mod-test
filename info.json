@@ -4,6 +4,7 @@
     "title": "Mon mod test",
     "author": "Minderfind",
     "factorio_version": "2.0.11",
+    "description": "Un mod de test",
     "dependencies": [
         "space-age >= 2.0.0",
         "base >= 2.0.0",
