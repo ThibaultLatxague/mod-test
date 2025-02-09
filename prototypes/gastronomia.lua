@@ -4,7 +4,8 @@ data:extend({
         type = "autoplace-control",
         name = "gastronomia-ingredient",
         richness = true,
-        order = "b-e"
+        order = "b-e",
+        category = "resource"
     }
 })
 
