@@ -10,41 +10,6 @@ local planet_catalogue_vulcanus = require("__space-age__.prototypes.planet.proce
 local gastronomia = {
     type = "planet",
     name = "gastronomia",
-    localised_name = { "planet-name.gastronomia" },
-    localised_description = { "planet-description.gastronomia" },
-    icon = "__mod-test__/graphics/icons/gastronomia-icon.png",
-    icon_size = 64,
-    celestial_position = { x = 150, y = -75 },
-    map_color = { r = 0.8, g = 0.4, b = 0.1 },
-    glow_color = { r = 1.0, g = 0.6, b = 0.2 },
-    radius = 1200,
-    starting_resource_amount = 1000000,
-    environment_type = "forest",
-    terrain_segmentation = 0.75,
-    water_level = 0.25,
-    distance = 17,
-    orientation = 0.4,
-    magnitude = 1.5,
-    resources = {
-        { type = "crude-oil",              richness = "very-good", size = "medium" },
-        { type = "coal",                   richness = "good",      size = "large" },
-        { type = "copper-ore",             richness = "regular",   size = "medium" },
-        { type = "iron-ore",               richness = "regular",   size = "medium" }
-        -- { type = "gastronomia-ingredient", richness = "very-good", size = "large" } -- Ressource personnalisée
-    },
-    starting_area_size = 3,
-    starting_area_resource_amount = 50000,
-    has_atmosphere = true,
-    atmosphere_color = { r = 0.9, g = 0.5, b = 0.3 },
-    has_rings = false,
-    enemy_evolution_factor = 0.5,
-    enemy_expansion_cooldown = 3600,
-    enemy_base_density = 0.25
-}
-
-local planetTest = {
-    type = "planet",
-    name = "Gastronomia",
     icon = "__mod-test__/graphics/icons/gastronomia-icon.png",
     starmap_icon = "__space-age__/graphics/icons/starmap-planet-gleba.png",
     starmap_icon_size = 512,
@@ -140,10 +105,28 @@ local planetTest = {
             zoom_factor = 3,
             zoom_intensity = 0.6
         }
-    }
+    },
+    has_rings = true,
+    ring_count = 3,
+    ring_min = 1.5,
+    ring_max = 2.5,
+    has_atmosphere = true,
+    atmosphere_color = { r = 0.9, g = 0.5, b = 0.3 },
+    resources = {
+        { type = "crude-oil",              richness = "very-good", size = "medium" },
+        { type = "coal",                   richness = "good",      size = "large" },
+        { type = "copper-ore",             richness = "regular",   size = "medium" },
+        { type = "iron-ore",               richness = "regular",   size = "medium" }
+        -- { type = "gastronomia-ingredient", richness = "very-good", size = "large" } -- Ressource personnalisée
+    },
+    starting_area_size = 3,
+    starting_area_resource_amount = 50000,
+    map_color = { r = 0.8, g = 0.4, b = 0.1 },
+    glow_color = { r = 1.0, g = 0.6, b = 0.2 },
+    radius = 1200,
+    starting_resource_amount = 1000000
 }
 
 data:extend({
-    -- gastronomia,
-    planetTest
+    gastronomia
 })
