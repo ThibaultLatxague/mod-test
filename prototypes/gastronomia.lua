@@ -21,80 +21,55 @@ local gastronomia_item = {
 }
 
 -- Définition de la ressource
-local gastronomia_ingredient = {
-    type = "resource",
-    name = "gastronomia-ingredient",
-    icon = "__mod-test__/graphics/icons/gastronomia-ingredient.png",
-    icon_size = 64,
-    flags = { "placeable-neutral" },
-    category = "basic-solid",
-    map_color = { r = 0.9, g = 0.4, b = 0.1 },
-    minable = {
-        mining_time = 1.5,
-        results = {
-            {
-                type = "item",
-                name = "gastronomia-ingredient",
-                amount_min = 1,
-                amount_max = 3
+data:extend({
+    {
+        type = "resource",
+        name = "gastronomia-ingredient",
+        icon = "__mod-test__/graphics/icons/gastronomia-ingredient.png",
+        icon_size = 64,
+        flags = {"placeable-neutral"},
+        category = "basic-solid",
+        order = "a-b-a",
+        infinite = false,
+        minimum = 200,
+        normal = 1000,
+        maximum = 3000,
+        stage_counts = {1500},
+        minable = {
+            hardness = 0.9,
+            mining_particle = "stone-particle",
+            mining_time = 2,
+            result = "gastronomia-ingredient"
+        },
+        autoplace = {
+            control = "gastronomia-ingredient",
+            sharpness = 1,
+            richness_multiplier = 1500,
+            richness_base = 500,
+            probability_expression = 0.5,
+            coverage = 0.02,
+            peaks = {
+                {
+                    noise_layer = "gastronomia-ingredient",
+                    noise_octaves_difference = -1.5,
+                    noise_persistence = 0.3
+                }
             }
-        }
-    },
-    resource_patch_search_radius = 100,
-    collision_box = { { -1.4, -1.4 }, { 1.4, 1.4 } },
-    selection_box = { { -1.5, -1.5 }, { 1.5, 1.5 } },
-    autoplace = {
-        control = "gastronomia-ingredient",
-        sharpness = 1.0,
-        richness_multiplier = 1500,
-        richness_base = 500,
-        size_control_multiplier = 0.1,
-        probability_expression = 0.5,
-        peaks = {
-            {
-                influence = 0.15,
-                starting_area_weight_optimal = 1,
-                starting_area_weight_range = 0,
-                starting_area_weight_max_range = 2
-            },
-            {
-                influence = 0.3,
-                noise_layer = "gastronomia-ingredient",
-                noise_octaves_difference = -1.5,
-                noise_persistence = 0.3
-            }
-        }
-    },
-    stage_counts = { 10000, 7500, 5000, 2500, 1000, 500, 100, 50 },
-    stages = {
-        sheet = {
-            filename = "__mod-test__/graphics/entity/gastronomia-ingredient/gastronomia-ingredient-ore.png",
-            priority = "extra-high",
-            width = 64,
-            height = 64,
-            frame_count = 8,
-            variation_count = 8,
-            hr_version = {
-                filename = "__mod-test__/graphics/entity/gastronomia-ingredient/gastronomia-ingredient-ore.png",
+        },
+        stages = {
+            sheet = {
+                filename = "__mod-test__/graphics/entity/gastronomia-ingredient/gastronomia-ingredient.png",
                 priority = "extra-high",
-                width = 128,
-                height = 128,
-                frame_count = 8,
-                variation_count = 8,
-                scale = 0.5
+                size = 64,
+                frame_count = 4,
+                variation_count = 1
             }
-        }
-    },
-    effect_animation_period = 5,
-    effect_animation_period_deviation = 1,
-    effect_darkness_multiplier = 3.6,
-    min_effect_alpha = 0.2,
-    max_effect_alpha = 0.3,
-    map_grid = false
-}
+        },
+        map_color = { r = 0.8, g = 0.4, b = 0.1 }
+    }
+})
 
 -- Enregistrement dans les données du mod
 data:extend({
-    gastronomia_item,
-    gastronomia_ingredient
+    gastronomia_item
 })

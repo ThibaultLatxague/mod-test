@@ -5,6 +5,7 @@ local planet_map_gen = require("__space-age__/prototypes/planet/planet-map-gen")
 planet_map_gen.gastronomia = function()
     return
     {
+        name="gastronomia_surface",
         property_expression_names =
         {
             elevation = "gastronomia_elevation",
