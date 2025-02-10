@@ -28,22 +28,7 @@ local fulgora_gastronomia_connection = {
     length = 15000
 }
 
-local vulcanus_gastronomia_connection = {
-    type = "space-connection",
-    name = "vulcanus-gastronomia-connection",
-    --icon = "__mod-test__/graphics/icons/gastronomia-space-connection.png",
-    icon_size = 64, 
-    icon_mipmaps = 4,
-    order = "a[space-connection]",
-    stack_size = 100,
-
-    from = "vulcanus",
-    to = "gastronomia",
-    length = 20000
-}
-
 data:extend {
     nauvis_gastronomia_connection,
-    fulgora_gastronomia_connection,
-    vulcanus_gastronomia_connection
+    fulgora_gastronomia_connection
 }
