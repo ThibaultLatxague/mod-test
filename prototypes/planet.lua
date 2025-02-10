@@ -22,14 +22,15 @@ local gastronomia = {
     environment_type = "forest",
     terrain_segmentation = 0.75,
     water_level = 0.25,
-    distance = 0.7,
-    orientation = 0.75,
+    distance = 17,
+    orientation = 0.4,
+    magnitude = 1.5,
     resources = {
         { type = "crude-oil",              richness = "very-good", size = "medium" },
         { type = "coal",                   richness = "good",      size = "large" },
         { type = "copper-ore",             richness = "regular",   size = "medium" },
-        { type = "iron-ore",               richness = "regular",   size = "medium" },
-        { type = "gastronomia-ingredient", richness = "very-good", size = "large" } -- Ressource personnalisée
+        { type = "iron-ore",               richness = "regular",   size = "medium" }
+        -- { type = "gastronomia-ingredient", richness = "very-good", size = "large" } -- Ressource personnalisée
     },
     starting_area_size = 3,
     starting_area_resource_amount = 50000,
@@ -43,13 +44,13 @@ local gastronomia = {
 
 local planetTest = {
     type = "planet",
-    name = "gastronomiaTest",
+    name = "Gastronomia",
     icon = "__mod-test__/graphics/icons/gastronomia-icon.png",
-    starmap_icon = "__space-age__/graphics/icons/starmap-planet-vulcanus.png",
+    starmap_icon = "__space-age__/graphics/icons/starmap-planet-gleba.png",
     starmap_icon_size = 512,
     gravity_pull = 10,
-    distance = 15,
-    orientation = 0.2,
+    distance = 17,
+    orientation = 0.4,
     magnitude = 1.5,
     order = "b[gastronomia]",
     subgroup = "planets",
@@ -143,6 +144,6 @@ local planetTest = {
 }
 
 data:extend({
-    gastronomia,
+    -- gastronomia,
     planetTest
 })
