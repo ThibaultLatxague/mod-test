@@ -1,3 +1,5 @@
+require ("prototypes.mapGenGastronomia")
+
 require ("prototypes.item")
 require ("prototypes.recipe")
 require ("prototypes.technology")

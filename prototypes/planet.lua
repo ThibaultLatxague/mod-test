@@ -1,7 +1,7 @@
 -- planet.lua
 
 require("__space-age__/prototypes/planet/planet-vulcanus-map-gen")
-local planet_map_gen = require("__space-age__/prototypes/planet/planet-map-gen")
+local planet_map_gen = require("__mod-test__/prototypes/mapGenGastronomia")
 
 local effects = require("__core__.lualib.surface-render-parameter-effects")
 local asteroid_util = require("__space-age__.prototypes.planet.asteroid-spawn-definitions")
@@ -19,7 +19,7 @@ local gastronomia = {
     magnitude = 1.5,
     order = "b[gastronomia]",
     subgroup = "planets",
-    map_gen_settings = planet_map_gen.vulcanus(),
+    map_gen_settings = planet_map_gen.gastronomia(),
     pollutant_type = nil,
     solar_power_in_space = 400,
     platform_procession_set =
@@ -116,8 +116,8 @@ local gastronomia = {
         { type = "crude-oil",              richness = "very-good", size = "medium" },
         { type = "coal",                   richness = "good",      size = "large" },
         { type = "copper-ore",             richness = "regular",   size = "medium" },
-        { type = "iron-ore",               richness = "regular",   size = "medium" }
-        -- { type = "gastronomia-ingredient", richness = "very-good", size = "large" } -- Ressource personnalisée
+        { type = "iron-ore",               richness = "regular",   size = "medium" },
+        { type = "gastronomia-ingredient", richness = "very-good", size = "large" } -- Ressource personnalisée
     },
     starting_area_size = 3,
     starting_area_resource_amount = 50000,
