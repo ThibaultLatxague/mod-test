@@ -74,7 +74,7 @@ local wine = {
 
 local duplication_grape_recipe = {
     type = "recipe",
-    name = "duplication-grape",
+    name = "grape-reprocessing",
     ingredients = {
         {type="item", name="grape", amount=1}
     },
