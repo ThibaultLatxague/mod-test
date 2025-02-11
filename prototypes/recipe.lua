@@ -45,7 +45,7 @@ local fertilizer_2 = {
         {type="item", name="fertilizer", amount=2}
     },
     results = {
-        {type="item", name="fertilizer", amount=2}
+        {type="item", name="fertilizer_2", amount=1}
     },
     energy_required = 2,
     category = "crafting",
