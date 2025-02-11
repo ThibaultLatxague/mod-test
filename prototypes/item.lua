@@ -20,7 +20,33 @@ local grape = {
     order = "a[iron-plate]",
 }
 
+local fertilizer = {
+    type = "item",
+    name = "fertilizer",
+    icon = "__mod-test__/graphics/icons/fertilizer.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-material",
+    order = "a[iron-plate]",
+    stack_size = 100,
+    fuel_category = "chemical",
+    fuel_value = "1MJ"
+}
+
+local fertilizer_2 = {
+    type = "item",
+    name = "fertilizer_2",
+    icon = "__mod-test__/graphics/icons/fertilizer_2.png",
+    icon_size = 64, icon_mipmaps = 4,
+    subgroup = "raw-material",
+    order = "a[iron-plate]",
+    stack_size = 50,
+    fuel_category = "chemical",
+    fuel_value = "2MJ"
+}
+
 data:extend({
     alloy_plate,
-    grape
+    grape,
+    fertilizer,
+    fertilizer_2
 })

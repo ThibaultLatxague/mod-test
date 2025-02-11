@@ -18,6 +18,40 @@ local alloy_plate = {
     -- order = "a[iron-plate]"
 }
 
+local fertilizer = {
+    type = "recipe",
+    name = "fertilizer",
+    ingredients = {
+        {type="item", name="wood", amount=2},
+        {type="item", name="stone", amount=2},
+        {type="item", name="coal", amount=1}
+    },
+    results = {
+        {type="item", name="fertilizer", amount=2}
+    },
+    energy_required = 1,
+    category = "crafting",
+    group = "intermediate-products",
+    subgroup = "raw-material"
+}
+
+local fertilizer_2 = {
+    type = "recipe",
+    name = "fertilizer_2",
+    ingredients = {
+        {type="item", name="wood", amount=5},
+        {type="item", name="coal", amount=2},
+        {type="item", name="fertilizer", amount=2}
+    },
+    results = {
+        {type="item", name="fertilizer", amount=2}
+    },
+    energy_required = 2,
+    category = "crafting",
+    group = "intermediate-products",
+    subgroup = "raw-material"
+}
+
 local wine = {
     name = "wine",
     type = "recipe",
@@ -38,5 +72,7 @@ local wine = {
 
 data:extend({
     alloy_plate,
-    wine
+    wine,
+    fertilizer,
+    fertilizer_2
 })
