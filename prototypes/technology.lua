@@ -50,17 +50,13 @@ local gastronomia_discovery = {
 
 local grape_reprocessing = {
     type="technology",
-    name="grape-reprocessing-technology",
+    name="grape-reprocessing",
     icon = "__mod-test__/graphics/icons/grape-reprocessing-technology.png",
     icon_size = 64, icon_mipmaps = 4,
     prerequisites = {"planet-discovery-gastronomia"},
-    unit = {
-        count_formula = "10",
-        ingredients = {
-            {"automation-science-pack", 1},
-            {"logistic-science-pack", 1}
-        },
-        time = 2,
+    research_trigger = {
+        type = "craft-fluid",
+        fluid = "wine"
     },
     effects = {
         {type = "unlock-recipe", recipe = "grape-reprocessing"},
