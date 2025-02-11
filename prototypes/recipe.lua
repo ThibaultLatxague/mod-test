@@ -89,10 +89,30 @@ local duplication_grape_recipe = {
     icon = "__mod-test__/graphics/icons/grape-reprocessing.png",
 }
 
+local gastronomia_science_pack = {
+    type = "recipe",
+    icon = "__mod-test__/graphics/icons/gastronomia-science-pack.png",
+    icon_size = 64,
+    name = "gastronomia-science-pack",
+    ingredients = {
+        {type="item", name="grape", amount=1},
+        {type="item", name="fertilizer", amount=1},
+        {type="item", name="fertilizer_2", amount=1}
+    },
+    results = {
+        {type="item", name="gastronomia-science-pack", amount=1}
+    },
+    energy_required = 1,
+    category = "crafting",
+    group = "intermediate-products",
+    subgroup = "raw-material"
+}
+
 data:extend({
     alloy_plate,
     wine,
     fertilizer,
     fertilizer_2,
-    duplication_grape_recipe
+    duplication_grape_recipe,
+    gastronomia_science_pack
 })

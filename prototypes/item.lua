@@ -44,9 +44,20 @@ local fertilizer_2 = {
     fuel_value = "2MJ"
 }
 
+local gastronomia_science_pack = {
+    type = "item",
+    name = "gastronomia-science-pack",
+    icon = "__mod-test__/graphics/icons/gastronomia-science-pack.png",
+    icon_size = 64,
+    subgroup = "science-pack",
+    order = "a[gastronomia-science-pack]",
+    stack_size = 200
+}
+
 data:extend({
     alloy_plate,
     grape,
     fertilizer,
-    fertilizer_2
+    fertilizer_2,
+    gastronomia_science_pack
 })

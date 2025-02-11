@@ -65,8 +65,29 @@ local grape_reprocessing = {
     },
 }
 
+local gastronomia_science_pack = {
+    type = "technology",
+    name = "gastronomia-science-pack",
+    icon = "__mod-test__/graphics/technology/gastronomia-science-pack.png",
+    icon_size = 256,
+    icon_size = 256,
+    essential = true,
+    effects = {
+        {
+            type = "unlock-recipe",
+            recipe = "gastronomia-science-pack",
+        },
+    },
+    prerequisites = {"grape-reprocessing"},
+    research_trigger = {
+        type = "craft-item",
+        item = "cryogenic-plant"
+    }
+}
+
 data:extend({
     alloy_tech,
     gastronomia_discovery,
     grape_reprocessing,
+    gastronomia_science_pack
 })
