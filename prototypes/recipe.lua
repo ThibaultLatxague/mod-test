@@ -60,21 +60,39 @@ local wine = {
     icon = "__mod-test__/graphics/icons/fluid/wine.png",
     icon_size = 64,
     ingredients = {
-        {type="item", name="grape", amount=5},
-        {type="fluid", name="water", amount=100}
+        {type="item", name="grape", amount=15},
+        {type="fluid", name="water", amount=1000}
     },
     results = {
-        {type="fluid", name="wine", amount=50}
+        {type="fluid", name="wine", amount=750}
     },
-    energy_required = 10,
+    energy_required = 60,
     category = "chemistry-or-cryogenics",
     group = "fluids",
     subgroup = "fluid-recipes"
+}
+
+local duplication_grape_recipe = {
+    type = "recipe",
+    name = "duplication-grape",
+    ingredients = {
+        {type="item", name="grape", amount=1}
+    },
+    results = {
+        {type="item", name="grape", amount=2, probability=0.2},
+        {type="item", name="grape", amount=1, probability=0.8}
+    },
+    energy_required = 2,
+    category = "crafting",
+    group = "intermediate-products",
+    subgroup = "raw-material",
+    icon = "__mod-test__/graphics/icons/grape-reprocessing.png",
 }
 
 data:extend({
     alloy_plate,
     wine,
     fertilizer,
-    fertilizer_2
+    fertilizer_2,
+    duplication_grape_recipe
 })
