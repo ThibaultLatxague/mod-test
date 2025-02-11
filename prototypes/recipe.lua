@@ -32,7 +32,8 @@ local fertilizer = {
     energy_required = 1,
     category = "crafting",
     group = "intermediate-products",
-    subgroup = "raw-material"
+    subgroup = "raw-material",
+    icon = "__mod-test__/graphics/icons/fertilizer.png",
 }
 
 local fertilizer_2 = {
@@ -49,7 +50,8 @@ local fertilizer_2 = {
     energy_required = 2,
     category = "crafting",
     group = "intermediate-products",
-    subgroup = "raw-material"
+    subgroup = "raw-material",
+    icon = "__mod-test__/graphics/icons/fertilizer_2.png",
 }
 
 local wine = {
