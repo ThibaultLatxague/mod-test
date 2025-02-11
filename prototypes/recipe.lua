@@ -60,7 +60,7 @@ local wine = {
     icon = "__mod-test__/graphics/icons/fluid/wine.png",
     icon_size = 64,
     ingredients = {
-        {type="item", name="grape", amount=15},
+        {type="item", name="grape-seed", amount=15},
         {type="fluid", name="water", amount=1000}
     },
     results = {
@@ -72,21 +72,21 @@ local wine = {
     subgroup = "fluid-recipes"
 }
 
-local duplication_grape_recipe = {
+local grape_seed_reprocessing = {
     type = "recipe",
-    name = "grape-reprocessing",
+    name = "grape-seed-reprocessing",
     ingredients = {
-        {type="item", name="grape", amount=1}
+        {type="item", name="grape-seed", amount=1}
     },
     results = {
-        {type="item", name="grape", amount=2, probability=0.2},
-        {type="item", name="grape", amount=1, probability=0.8}
+        {type="item", name="grape-seed", amount=2, probability=0.2},
+        {type="item", name="grape-seed", amount=1, probability=0.8}
     },
     energy_required = 2,
     category = "crafting",
     group = "intermediate-products",
     subgroup = "raw-material",
-    icon = "__mod-test__/graphics/icons/grape-reprocessing.png",
+    icon = "__mod-test__/graphics/icons/grape-seed-reprocessing.png",
 }
 
 local gastronomia_science_pack = {
@@ -95,7 +95,7 @@ local gastronomia_science_pack = {
     icon_size = 64,
     name = "gastronomia-science-pack",
     ingredients = {
-        {type="item", name="grape", amount=1},
+        {type="item", name="grape-seed", amount=1},
         {type="item", name="fertilizer", amount=1},
         {type="item", name="fertilizer_2", amount=1}
     },
@@ -113,6 +113,6 @@ data:extend({
     wine,
     fertilizer,
     fertilizer_2,
-    duplication_grape_recipe,
+    grape_seed_reprocessing,
     gastronomia_science_pack
 })

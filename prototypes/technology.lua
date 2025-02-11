@@ -48,7 +48,7 @@ local gastronomia_discovery = {
     }
 }
 
-local grape_reprocessing = {
+local grape_seed_reprocessing = {
     type="technology",
     name="grape-reprocessing",
     icon = "__mod-test__/graphics/icons/grape-reprocessing-technology.png",
@@ -59,7 +59,7 @@ local grape_reprocessing = {
         fluid = "wine"
     },
     effects = {
-        {type = "unlock-recipe", recipe = "grape-reprocessing"},
+        {type = "unlock-recipe", recipe = "grape-seed-reprocessing"},
         {type = "unlock-recipe", recipe = "fertilizer"},
         {type = "unlock-recipe", recipe = "fertilizer_2"}
     },
@@ -88,6 +88,6 @@ local gastronomia_science_pack = {
 data:extend({
     alloy_tech,
     gastronomia_discovery,
-    grape_reprocessing,
+    grape_seed_reprocessing,
     gastronomia_science_pack
 })

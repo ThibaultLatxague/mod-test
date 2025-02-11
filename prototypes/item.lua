@@ -10,6 +10,16 @@ local alloy_plate = {
     stack_size = 100
 }
 
+local grape_seed = {
+    name = "grape-seed",
+    type = "item",
+    icon = "__mod-test__/graphics/icons/grape-seed.png",
+    icon_size = 64,
+    stack_size = 100,
+    subgroup = "raw-material",
+    order = "a[iron-plate]",
+}
+
 local grape = {
     name = "grape",
     type = "item",
@@ -56,7 +66,7 @@ local gastronomia_science_pack = {
 
 data:extend({
     alloy_plate,
-    grape,
+    grape_seed,
     fertilizer,
     fertilizer_2,
     gastronomia_science_pack
