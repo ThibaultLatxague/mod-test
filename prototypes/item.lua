@@ -64,11 +64,23 @@ local gastronomia_science_pack = {
     stack_size = 200
 }
 
+local distillery = {
+    name = "distillery",
+    type = "item",
+
+    icon = "__mod-test__/graphics/icons/distillery.png",
+    icon_size = 64,
+
+    place_result = "distillery",
+    stack_size = 20
+}
+
 data:extend({
     alloy_plate,
     grape_seed,
+    grape,
     fertilizer,
     fertilizer_2,
     gastronomia_science_pack,
-    grape
+    distillery
 })

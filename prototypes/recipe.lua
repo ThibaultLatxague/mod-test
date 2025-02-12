@@ -67,7 +67,27 @@ local wine = {
         {type="fluid", name="wine", amount=750}
     },
     energy_required = 60,
-    category = "chemistry-or-cryogenics",
+    category = "distilling",
+    group = "fluids",
+    subgroup = "fluid-recipes"
+}
+
+local distillery = {
+    name = "distillery",
+    type = "recipe",
+    icon = "__mod-test__/graphics/icons/distillery.png",
+    icon_size = 64,
+    ingredients = {
+        {type="item", name="alloy-plate", amount=15},
+        {type="item", name="pipe", amount=10},
+        {type="item", name="stone-brick", amount=10},
+        {type="item", name="stone-furnace", amount=1}
+    },
+    results = {
+        {type="item", name="distillery", amount=1}
+    },
+    energy_required = 60,
+    category = "crafting-with-fluid",
     group = "fluids",
     subgroup = "fluid-recipes"
 }
@@ -114,5 +134,6 @@ data:extend({
     fertilizer,
     fertilizer_2,
     grape_seed_reprocessing,
-    gastronomia_science_pack
+    gastronomia_science_pack,
+    distillery
 })
