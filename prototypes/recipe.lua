@@ -95,15 +95,15 @@ local gastronomia_science_pack = {
     icon_size = 64,
     name = "gastronomia-science-pack",
     ingredients = {
-        {type="item", name="grape-seed", amount=1},
-        {type="item", name="fertilizer", amount=1},
-        {type="item", name="fertilizer_2", amount=1}
+        {type="item", name="grape", amount=1},
+        {type="item", name="fertilizer_2", amount=1},
+        {type="fluid", name="wine", amount=25}
     },
     results = {
         {type="item", name="gastronomia-science-pack", amount=1}
     },
     energy_required = 1,
-    category = "crafting",
+    category = "crafting-with-fluid",
     group = "intermediate-products",
     subgroup = "raw-material"
 }

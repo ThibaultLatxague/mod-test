@@ -69,5 +69,6 @@ data:extend({
     grape_seed,
     fertilizer,
     fertilizer_2,
-    gastronomia_science_pack
+    gastronomia_science_pack,
+    grape
 })
