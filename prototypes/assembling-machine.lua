@@ -26,46 +26,29 @@ local distiller = {
         frame_count = 1,
         line_length = 1,
     },
-    drawing_box = {{-1.5, -2.2}, {1.5, 1.5}},
-    selection_box = {{-1.5, -2.5}, {1.5, 1.5}},
-    collision_box = {{-1.4, -2.4}, {1.4, 1.4}},
+    drawing_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
+    collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
 
     fluid_boxes = {
         {
             production_type = "input",
             pipe_picture = assembler2pipepictures(),
             pipe_covers = pipecoverspictures(),
-            base_area = 10,
-            base_level = -1,
-            pipe_connections = {{ type="input", position = {1, -2} }},
+            base_area = 1,
+            volume = 1000,
+            pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {1, -1} }},
             secondary_draw_orders = { north = -1 }
         },
         {
-            production_type = "input",
+            production_type = "output",
             pipe_picture = assembler2pipepictures(),
             pipe_covers = pipecoverspictures(),
-            base_area = 10,
-            base_level = -1,
-            pipe_connections = {{ type="input", position = {-1, -2} }},
+            base_area = 1,
+            volume = 1000,
+            pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {-1, 1} }},
             secondary_draw_orders = { north = -1 }
         },
-        {
-            production_type = "output",
-            pipe_covers = pipecoverspictures(),
-            base_area = 10,
-            base_level = 1,
-            pipe_connections = {{ type="output", position = {1, 2} }},
-            secondary_draw_orders = { north = -1 }
-        },
-        {
-            production_type = "output",
-            pipe_covers = pipecoverspictures(),
-            base_area = 10,
-            base_level = 1,
-            pipe_connections = {{ type="output", position = {-1, 2} }},
-            secondary_draw_orders = { north = -1 }
-        },
-        fluid_boxes_off_when_no_fluid_recipe = true
     }
 }
 

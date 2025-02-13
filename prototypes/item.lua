@@ -65,13 +65,13 @@ local gastronomia_science_pack = {
 }
 
 local distillery = {
-    name = "distillery",
+    name = "distiller",
     type = "item",
 
-    icon = "__mod-test__/graphics/icons/distillery.png",
+    icon = "__mod-test__/graphics/icons/distiller.png",
     icon_size = 64,
 
-    place_result = "distillery",
+    place_result = "distiller",
     stack_size = 20
 }
 

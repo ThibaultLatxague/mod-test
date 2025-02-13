@@ -60,7 +60,7 @@ local wine = {
     icon = "__mod-test__/graphics/icons/fluid/wine.png",
     icon_size = 64,
     ingredients = {
-        {type="item", name="grape-seed", amount=15},
+        {type="item", name="grape", amount=15},
         {type="fluid", name="water", amount=1000}
     },
     results = {
@@ -73,9 +73,9 @@ local wine = {
 }
 
 local distillery = {
-    name = "distillery",
+    name = "distiller",
     type = "recipe",
-    icon = "__mod-test__/graphics/icons/distillery.png",
+    icon = "__mod-test__/graphics/icons/distiller.png",
     icon_size = 64,
     ingredients = {
         {type="item", name="alloy-plate", amount=15},
@@ -84,7 +84,7 @@ local distillery = {
         {type="item", name="stone-furnace", amount=1}
     },
     results = {
-        {type="item", name="distillery", amount=1}
+        {type="item", name="distiller", amount=1}
     },
     energy_required = 60,
     category = "crafting-with-fluid",
