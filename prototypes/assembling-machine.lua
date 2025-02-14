@@ -26,9 +26,9 @@ local distiller = {
         frame_count = 1,
         line_length = 1,
     },
-    drawing_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    selection_box = {{-1.5, -1.5}, {1.5, 1.5}},
-    collision_box = {{-1.4, -1.4}, {1.4, 1.4}},
+    drawing_box = {{-2, -2}, {2, 2}},
+    selection_box = {{-2, -2}, {2, 2}},
+    collision_box = {{-1.9, -1.9}, {1.9, 1.9}},
 
     fluid_boxes = {
         {
@@ -37,7 +37,7 @@ local distiller = {
             pipe_covers = pipecoverspictures(),
             base_area = 1,
             volume = 1000,
-            pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {1, -1} }},
+            pipe_connections = {{ flow_direction="input", direction = defines.direction.north, position = {1, -1.5} }},
             secondary_draw_orders = { north = -1 }
         },
         {
@@ -46,7 +46,7 @@ local distiller = {
             pipe_covers = pipecoverspictures(),
             base_area = 1,
             volume = 1000,
-            pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {-1, 1} }},
+            pipe_connections = {{ flow_direction="output", direction = defines.direction.south, position = {-1, 1.5} }},
             secondary_draw_orders = { north = -1 }
         },
     }
