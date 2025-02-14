@@ -84,7 +84,7 @@ local wine_growing = {
     results = {
         {type="item", name="grape", amount=1}
     },
-    energy_required = 60,
+    energy_required = 3,
     category = "growing",
     group = "fluids",
     subgroup = "fluid-recipes"

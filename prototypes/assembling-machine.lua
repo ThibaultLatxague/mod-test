@@ -72,11 +72,9 @@ local farm_house = {
         module_slots = 2
     },
     allowed_effects = {"consumption", "speed", "productivity", "quality"},
-    animation = {
-        filename = "__mod-test__/graphics/entity/farm-house/farm-house.png",
-        size = 96,
-        frame_count = 1,
-        line_length = 1,
+    picture = {
+        filename = "__mod-test__/graphics/entity/distiller/distiller.png",
+        size = 96
     },
     drawing_box = {{-2.5, -2.5}, {2.5, 2.5}},
     selection_box = {{-2.5, -2.5}, {2.5, 2.5}},
