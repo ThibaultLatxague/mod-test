@@ -72,6 +72,24 @@ local wine = {
     subgroup = "fluid-recipes"
 }
 
+local wine_growing = {
+    name = "wine-growing",
+    type = "recipe",
+    icon = "__mod-test__/graphics/icons/grape.png",
+    icon_size = 64,
+    ingredients = {
+        {type="item", name="grape-seed", amount=1},
+        {type="fluid", name="water", amount=100}
+    },
+    results = {
+        {type="item", name="grape", amount=1}
+    },
+    energy_required = 60,
+    category = "growing",
+    group = "fluids",
+    subgroup = "fluid-recipes"
+}
+
 local distillery = {
     name = "distiller",
     type = "recipe",
@@ -135,5 +153,6 @@ data:extend({
     fertilizer_2,
     grape_seed_reprocessing,
     gastronomia_science_pack,
-    distillery
+    distillery,
+    wine_growing
 })
